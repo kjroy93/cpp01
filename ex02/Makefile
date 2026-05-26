@@ -2,12 +2,9 @@
 #             VARIABLES                   #
 ###########################################
 
-NAME			=	zombie
+NAME			=	main
 OBJ_DIR			=	obj
-SRC				= 	src/newZombie.cpp		\
-					src/randomChump.cpp		\
-					src/Zombie.cpp			\
-					main.cpp
+SRC				= 	main.cpp
 INCLUDES		=	include
 CPP				=	g++
 CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -I$(INCLUDES) -g
@@ -20,7 +17,7 @@ OBJ				=	$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRC))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "Compiling Zombie 42"
+	@echo "Compiling main 42"
 	@$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 $(OBJ_DIR)/%.o: %.cpp

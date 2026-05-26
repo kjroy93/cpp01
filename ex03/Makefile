@@ -2,11 +2,11 @@
 #             VARIABLES                   #
 ###########################################
 
-NAME			=	zombie
+NAME			=	violence
 OBJ_DIR			=	obj
-SRC				= 	src/newZombie.cpp		\
-					src/randomChump.cpp		\
-					src/Zombie.cpp			\
+SRC				= 	src/HumanA.cpp	\
+					src/HumanB.cpp	\
+					src/Weapon.cpp	\
 					main.cpp
 INCLUDES		=	include
 CPP				=	g++
@@ -20,7 +20,7 @@ OBJ				=	$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRC))
 all: $(NAME)
 
 $(NAME): $(OBJ)
-	@echo "Compiling Zombie 42"
+	@echo "Compiling Violence 42"
 	@$(CPP) $(CPPFLAGS) $(OBJ) -o $(NAME)
 
 $(OBJ_DIR)/%.o: %.cpp
