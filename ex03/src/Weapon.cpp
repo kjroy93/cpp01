@@ -27,10 +27,7 @@ Weapon::Weapon(string type)
 	this->type_ = type;
 }
 
-Weapon::Weapon()
-{}
-
 Weapon::~Weapon()
 {
-	std::cout << "Weapon class is destroyed" << std::endl;
+	cout << "Weapon class is destroyed" << endl;
 }

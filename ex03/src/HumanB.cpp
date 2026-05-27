@@ -10,3 +10,38 @@
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "Weapon.hpp"
+#include "HumanB.hpp"
+
+HumanB::HumanB(string name):
+	name_(name), weapon_(NULL)
+{}
+
+HumanB::~HumanB()
+{
+	cout << "HumanB class is destroyed" << endl;
+}
+
+void	HumanB::setWeapon(Weapon& weapon)
+{
+	this->weapon_ = &weapon;
+}
+
+void	HumanB::attack()
+{
+	if (this->weapon_)
+	{
+		cout
+		<< name_
+		<< " attack with his"
+		<< this->weapon_->getType()
+		<< endl;
+	}
+	else
+	{
+		cout
+		<< this->name_
+		<< " attack with their bare hands"
+		<< endl;
+	}
+}

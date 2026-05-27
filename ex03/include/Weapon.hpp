@@ -14,13 +14,14 @@
 # define WEAPON_CPP
 # include <iostream>
 using std::string;
+using std::cout;
+using std::endl;
 
 class	Weapon
 {
 	private:
 		string type_;
 	public:
-		Weapon();
 		~Weapon();
 		Weapon(string type);
 		const string&	getType() const;

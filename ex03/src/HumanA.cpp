@@ -13,3 +13,19 @@
 #include "HumanA.hpp"
 #include "Weapon.hpp"
 
+HumanA::HumanA(string name, Weapon& weapon):
+	name_(name), weapon_(weapon)
+{}
+
+void	HumanA::attack()
+{
+	cout << name_
+	<< " attacks with their"
+	<< this->weapon_.getType()
+	<< endl;
+}
+
+HumanA::~HumanA()
+{
+	cout << "HumanA class destroyed" << endl;
+}

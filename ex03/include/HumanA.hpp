@@ -15,16 +15,17 @@
 # include <iostream>
 # include "Weapon.hpp"
 using	std::string;
+using	std::cout;
+using	std::endl;
 
 class	HumanA
 {
 	private:
 		string 	name_;
-		Weapon	*weapon_;
+		Weapon&	weapon_;
 	public:
-		HumanA();
 		~HumanA();
-		void	setWeapon(Weapon &weapon);
+		HumanA(string name, Weapon& weapon);
 		void	attack();
 };
 
