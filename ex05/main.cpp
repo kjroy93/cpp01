@@ -5,24 +5,23 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 17:05:18 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/06/03 18:59:24 by kjroydev         ###   ########.fr       */
+/*   Created: 2026/06/03 19:49:19 by kjroydev          #+#    #+#             */
+/*   Updated: 2026/06/03 19:52:18 by kjroydev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <iostream>
+#include "Harl.hpp"
 
 int	main(void)
 {
-	std::string var = "HI THIS IS BRAIN";
-	std::string	*stringPTR = &var;
-	std::string& stringREF = var;
+	Harl	harl;
 
-	std::cout << "&var		(the addres of var): " << &var << std::endl;
-	std::cout << "&stringREF	(the addres of ref): " << &stringREF << std::endl;
-	std::cout << "&stringPTR	(the addres of ptr): " << &stringPTR << std::endl;
-	std::cout << " \n";
-	std::cout << "var		(the content of var):		" << var << std::endl;
-	std::cout << "stringREF	(the content of ref):		" << stringREF << std::endl;
-	std::cout << "stringPTR	(the content of ptr):		" << stringPTR << std::endl;
+	std::cout << "DEBUG" << std::endl;
+	harl.complain("DEBUG");
+	std::cout << "INFO" << std::endl;
+	harl.complain("INFO");
+	std::cout << "WARNING" << std::endl;
+	harl.complain("WARNING");
+	std::cout << "ERROR" << std::endl;
+	harl.complain("ERROR");
 }

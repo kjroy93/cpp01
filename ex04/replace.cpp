@@ -6,7 +6,7 @@
 /*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 20:37:57 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/05/27 21:42:25 by kjroydev         ###   ########.fr       */
+/*   Updated: 2026/06/03 19:02:39 by kjroydev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,7 @@ void	replace(const string filename, string s1, string s2)
 	string			new_file;
 
 	input.open(filename.c_str());
-	exit_error(input, "Inputr file could not be opened");
+	exit_error(input, "Input file could not be opened");
 	new_file = filename + ".replace";
 	output.open(new_file.c_str());
 	exit_error(output, "Output file could not be opened");
