@@ -6,7 +6,7 @@
 /*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 18:39:56 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/05/26 19:44:10 by kjroydev         ###   ########.fr       */
+/*   Updated: 2026/06/03 20:24:55 by kjroydev         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,5 +27,5 @@ void	HumanA::attack()
 
 HumanA::~HumanA()
 {
-	cout << "HumanA class destroyed" << endl;
+	cout << "HumanA class is destroyed" << endl;
 }
