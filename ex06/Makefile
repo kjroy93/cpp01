@@ -7,7 +7,7 @@ OBJ_DIR			=	obj
 INCLUDE			=	include
 SRC				= 	src/Harl.cpp	\
 					main.cpp
-CPP				=	g++
+CPP				=	c++
 CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -I$(INCLUDE) -g
 OBJ				=	$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
