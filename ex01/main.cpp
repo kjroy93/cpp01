@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   main.cpp                                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 15:05:26 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/05/26 17:00:10 by kjroydev         ###   ########.fr       */
+/*   Updated: 2026/06/23 20:05:51 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-int	main(int argc, char **argv)
+int	main(int argc, char *argv[])
 {
 	Zombie	*horde;
 	int		number;

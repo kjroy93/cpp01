@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   newZombie.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/26 12:14:16 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/05/26 13:24:46 by kjroydev         ###   ########.fr       */
+/*   Updated: 2026/06/23 19:57:39 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
 
-Zombie *newZombie(string name)
+Zombie *newZombie(std::string name)
 {
 	return (new Zombie(name));
 }

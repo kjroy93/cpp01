@@ -4,7 +4,7 @@
 
 NAME			=	zombie
 OBJ_DIR			=	obj
-SRC				= 	src/zombieHorde.cpp		\
+SRC				= 	src/ZombieHorde.cpp		\
 					src/Zombie.cpp			\
 					main.cpp
 INCLUDES		=	include
