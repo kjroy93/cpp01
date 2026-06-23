@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   replace.cpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/27 20:37:57 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/06/03 19:02:39 by kjroydev         ###   ########.fr       */
+/*   Updated: 2026/06/23 19:55:53 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,6 +37,8 @@ void	replace(const string filename, string s1, string s2)
 			line = line.substr(0, pos) + s2 + line.substr(pos + s1.length());
 		output << line << std::endl;
 	}
+	input.close();
+	output.close();
 }
 
 void	exit_error(std::ios& filestream, const string& message)
