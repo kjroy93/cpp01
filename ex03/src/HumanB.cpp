@@ -6,20 +6,20 @@
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/29 17:54:59 by kmarrero          #+#    #+#             */
-/*   Updated: 2026/06/29 17:55:00 by kmarrero         ###   ########.fr       */
+/*   Updated: 2026/06/29 18:08:53 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Weapon.hpp"
 #include "HumanB.hpp"
 
-HumanB::HumanB(string name):
+HumanB::HumanB(std::string name):
 	name_(name), weapon_(NULL)
 {}
 
 HumanB::~HumanB()
 {
-	cout << "HumanB class is destroyed" << endl;
+	std::cout << "HumanB class is destroyed" << std::endl;
 }
 
 void	HumanB::setWeapon(Weapon& weapon)
@@ -31,17 +31,17 @@ void	HumanB::attack()
 {
 	if (this->weapon_)
 	{
-		cout
+		std::cout
 		<< name_
-		<< " attack with his"
+		<< " attacks with his"
 		<< this->weapon_->getType()
-		<< endl;
+		<< std::endl;
 	}
 	else
 	{
-		cout
+		std::cout
 		<< this->name_
-		<< " attack with their bare hands"
-		<< endl;
+		<< " attacks with their bare hands"
+		<< std::endl;
 	}
 }

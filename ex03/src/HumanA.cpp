@@ -6,26 +6,26 @@
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/29 17:54:52 by kmarrero          #+#    #+#             */
-/*   Updated: 2026/06/29 17:54:54 by kmarrero         ###   ########.fr       */
+/*   Updated: 2026/06/29 18:09:27 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "HumanA.hpp"
 #include "Weapon.hpp"
 
-HumanA::HumanA(string name, Weapon& weapon):
+HumanA::HumanA(std::string name, Weapon& weapon):
 	name_(name), weapon_(weapon)
 {}
 
 void	HumanA::attack()
 {
-	cout << name_
+	std::cout << name_
 	<< " attacks with their"
 	<< this->weapon_.getType()
-	<< endl;
+	<< std::endl;
 }
 
 HumanA::~HumanA()
 {
-	cout << "HumanA class is destroyed" << endl;
+	std::cout << "HumanA class is destroyed" << std::endl;
 }
