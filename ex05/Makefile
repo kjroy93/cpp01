@@ -8,7 +8,7 @@ INCLUDE			=	include
 SRC				= 	src/Harl.cpp	\
 					main.cpp
 CPP				=	c++
-CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -I$(INCLUDE) -g
+CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -I$(INCLUDE) -MMP -MD -g
 OBJ				=	$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
 ###########################################
@@ -24,6 +24,12 @@ $(NAME): $(OBJ)
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	@$(CPP) $(CPPFLAGS) -c $< -o $@
+
+###########################################
+#                 INCLUDE                 #
+###########################################
+
+-include $(OBJ:.o=.d)
 
 ###########################################
 #               CLEANING                  #

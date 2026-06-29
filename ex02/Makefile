@@ -5,9 +5,8 @@
 NAME			=	main
 OBJ_DIR			=	obj
 SRC				= 	main.cpp
-INCLUDES		=	include
 CPP				=	c++
-CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -I$(INCLUDES) -g
+CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -g
 OBJ				=	$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
 ###########################################

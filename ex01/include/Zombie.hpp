@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 12:15:59 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/06/23 19:59:57 by kmarrero         ###   ########.fr       */
+/*   Created: 2026/06/29 17:53:19 by kmarrero          #+#    #+#             */
+/*   Updated: 2026/06/29 17:53:50 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,7 @@
 # define ZOMBIE_HPP
 # include <iostream>
 # include <cstdlib>
+# include <sstream>
 
 class	Zombie
 {

@@ -5,10 +5,9 @@
 NAME			=	replace
 OBJ_DIR			=	obj
 SRC				= 	replace.cpp	\
-					replace.hpp	\
 					main.cpp
 CPP				=	c++
-CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -g
+CPPFLAGS		=	-Wall -Werror -Wextra -std=c++98 -MMD -MP -g
 OBJ				=	$(patsubst %.cpp, $(OBJ_DIR)/%.o, $(SRC))
 
 ###########################################
@@ -24,6 +23,12 @@ $(NAME): $(OBJ)
 $(OBJ_DIR)/%.o: %.cpp
 	@mkdir -p $(dir $@)
 	@$(CPP) $(CPPFLAGS) -c $< -o $@
+
+###########################################
+#                 RULES                   #
+###########################################
+
+-include $(OBJ=.o=.d)
 
 ###########################################
 #               CLEANING                  #

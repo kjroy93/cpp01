@@ -5,13 +5,12 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 15:05:22 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/06/23 20:12:38 by kmarrero         ###   ########.fr       */
+/*   Created: 2026/06/29 17:53:39 by kmarrero          #+#    #+#             */
+/*   Updated: 2026/06/29 17:53:45 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "Zombie.hpp"
-#include <sstream>
 
 Zombie	*zombieHorde(int n, std::string name)
 {

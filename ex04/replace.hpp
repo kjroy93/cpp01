@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   replace.hpp                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kjroydev <kjroydev@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/27 20:35:45 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/05/27 21:28:32 by kjroydev         ###   ########.fr       */
+/*   Created: 2026/06/29 17:55:46 by kmarrero          #+#    #+#             */
+/*   Updated: 2026/06/29 17:55:48 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,9 +15,8 @@
 # include <iostream>
 # include <fstream>
 # include <cstdlib>
-using std::string;
 
-void	replace(string filename, string s1, string s2);
-void	exit_error(std::ios& filestream, const string& message);
+int		replace(std::string filename, std::string s1, std::string s2);
+void	exit_error(std::ios& filestream, const std::string& message);
 
 #endif

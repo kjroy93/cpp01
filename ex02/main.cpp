@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/05/26 17:05:18 by kjroydev          #+#    #+#             */
-/*   Updated: 2026/06/23 19:54:06 by kmarrero         ###   ########.fr       */
+/*   Created: 2026/06/29 17:54:27 by kmarrero          #+#    #+#             */
+/*   Updated: 2026/06/29 17:54:29 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,5 +24,5 @@ int	main(void)
 	std::cout << " \n";
 	std::cout << "var		(the content of var): "	<< var << std::endl;
 	std::cout << "stringREF	(the content of ref): "	<< stringREF << std::endl;
-	std::cout << "stringPTR	(the content of ptr): "	<< *stringPTR << std::endl;
+	std::cout << "stringPTR	(the content of ptr): "	<< stringPTR << std::endl;
 }
