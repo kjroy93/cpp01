@@ -6,13 +6,13 @@
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/29 17:55:42 by kmarrero          #+#    #+#             */
-/*   Updated: 2026/06/30 15:47:29 by kmarrero         ###   ########.fr       */
+/*   Updated: 2026/06/30 16:12:04 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "replace.hpp"
 
-int	replace(const std::string filename, std::string s1, std::string s2)
+int	replace(const std::string& filename, const std::string s1, const std::string s2)
 {
 	size_t			pos;
 	std::string		line;
