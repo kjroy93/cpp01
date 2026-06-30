@@ -6,7 +6,7 @@
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/29 17:54:59 by kmarrero          #+#    #+#             */
-/*   Updated: 2026/06/29 18:08:53 by kmarrero         ###   ########.fr       */
+/*   Updated: 2026/06/30 15:27:29 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ void	HumanB::attack()
 	{
 		std::cout
 		<< name_
-		<< " attacks with his"
+		<< " attacks with his "
 		<< this->weapon_->getType()
 		<< std::endl;
 	}

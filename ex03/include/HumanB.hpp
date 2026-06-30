@@ -6,7 +6,7 @@
 /*   By: kmarrero <kmarrero@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/06/29 17:54:41 by kmarrero          #+#    #+#             */
-/*   Updated: 2026/06/29 18:10:03 by kmarrero         ###   ########.fr       */
+/*   Updated: 2026/06/30 15:25:31 by kmarrero         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,7 +19,7 @@ class	HumanB
 {
 	private:
 		std::string 	name_;
-		Weapon*	weapon_;
+		Weapon*			weapon_;
 	public:
 		HumanB(std::string name);
 		~HumanB();
